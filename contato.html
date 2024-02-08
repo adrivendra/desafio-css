@@ -51,11 +51,12 @@
                         <textarea onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8"
                             placeholder="Deixe sua mensagem..."></textarea>
                         <div id="txtMensagem"></div>
+                        <button type="button" onclick="enviarForm()">
+                            Enviar
+                        </button>
                     </div>
 
-                    <button type="button" onclick="enviarForm()">
-                        Enviar
-                    </button>
+
 
 
                 </form>
@@ -64,16 +65,17 @@
         <section id="formulario_buscacep">
             <h3>Consultar CEP</h3>
             <div>
-                <div>
+                <div class="campos-form">
                     <label for="cep">CEP:</label>
                     <input onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
                     <div id="txtCep"></div>
+                    <button type="button" onclick="consultarCep()">
+                        Consultar
+                    </button>
                 </div>
-                <button type="button" onclick="consultarCep()">
-                    Consultar
-                </button>
+
                 <hr>
-                <div>
+                <div class="campos-form">
                     <label for="dados">Endereço:</label>
                     <textarea id="dados" name="dados" rows="7" placeholder="Busca CEP..."></textarea>
                     <div id="txtCep"></div>
